@@ -1,0 +1,119 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>Sorrento by the Sea – Luxury Apartments</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link href="Main.css" rel="stylesheet" />
+
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="HomePage.html" title="go to Home Page">
+                    <img src="Images/sorrento_by_the_sea_logo.jpg" alt="Sorreto Company Logo" />
+                </a>
+            </div>
+
+            <ul class="static">
+
+                <li><a href="HomePage.html">Home page</a></li>
+                <li><a class="active" href="ContactPage.html">Cotact Us and Location</a></li>
+                <li><a href="Thingtodo.html">Things to do</a></li>
+                <li><a href="Aboutus.html">About Us - Pricing</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+
+        <section class="left-col">
+            <h1 id="pagename">Contact Us and Location</h1>
+            <div>
+                <h2> Getting there</h2>
+                <div class="image">
+                    <img src="Images/sorrento_from_jetty.jpg" alt="Sorrento from jetty" title="Sorrento from jetty" />
+                </div>
+                <h3>How to get to Sorrento by the Sea?</h3>
+                <p>
+                    It is easy to find. From Melbourne, take the Monash Freeway, connect onto the Eastlink heading for Portsea, then onto the Peninsula link to Sorrento.
+                    Another option is the scenic drive around the beach. Although longer, it allows you to experience the coastline from Port Melbourne to Sorrento.
+                    If you choose to come across on the Queenscliff/Sorrento Ferry, it is only a 2 minute drive from the Ferry Depot.
+                    If you are a foot passenger we are happy to meet you at the Sorrento ferry at. Just phone us on 0435 123 456 as you arrive.
+                </p>
+                <h2>Map of Sorrento</h2>
+                <div class="image">
+                    <img id="map" src="Images/Mornington_Peninsula.PNG" alt="Map of Sorrento" title="Map of Sorrento" />
+                </div>
+            </div>
+
+         </section>
+
+        <aside class="right-col">
+            <h1>Contact details:</h1>
+
+            <ul class="contactdetails">
+                <li>For more Information and Bookings on:</li>
+                <li>Tel: 0435 123 456</li>
+                <li>Address: 42 Holyrood Avenue / Sorrento VIC 3943</li>
+            </ul>
+            <div class="formContainer">
+                <h1>Query Form</h1>
+                <p><b>Please fill in this form.</b></p>
+                <hr />
+                <form action=# onsubmit="return validateAll(this)" method="get">
+
+                    <label for="Name"><b>Name</b></label>
+                    <input type="text" class="valid" placeholder="Enter your name" id="Name" onblur="return containValidate(this,invalidName)" />
+                    <span id="invalidName"></span>
+                    <br />
+
+                    <label for="Email"><b>Email</b></label>
+                    <input type="text" class="valid"  id="Email" onblur="return validateNonEmail(this,invalidEmail)" />
+                    <span id="invalidEmail"></span>
+                    <br />
+
+                    <label for="PhoneNumber"><b>Phone Number</b></label>
+                    <input type="text" class="valid"  id="PhoneNumber" onblur="return validateNonNumber(this,invalidPhoneNumber)" />
+                    <span id="invalidPhoneNumber"></span>
+                    <br />
+
+                    <label for="query">Your Query:</label>
+                    <input type="text" id="query" rows="5" class="valid" onblur="return validateNonEmpty(this,emptyQuery)" />
+                    <span id="emptyQuery"></span>
+                    <br />
+
+                    <input type="submit" class="submit" value="Submit" />
+                    <input class="reset" type="reset" value="reset" />
+                </form>
+            </div>
+            <div id="message1"></div>
+
+        </aside>
+
+        <div id="top"><a href="#pagename">Go to Top</a></div>
+    </main>
+    <footer>
+        <p>Follow and Contact us:</p>
+        <a target="_blank" href="https://www.youtube.com/" title="go to Youtube">
+            <img src="Images/youtube-variation_small.png" alt="youtube icon" />
+        </a>
+
+        <a target="_blank" href="https://twitter.com/" title="go to Twitter">
+            <img src="Images/twitter_small.png" alt="twitter icon" />
+        </a>
+
+        <a target="_blank" href="https://www.instagram.com/" title="go to Instagram">
+            <img src="Images/instagram_small.png" alt=" instagram icon" />
+        </a>
+
+        <a target="_blank" href="https://www.facebook.com/" title="go to Facebook">
+            <img src="Images/facebook_small.png" alt=" facebook icon" />
+        </a>
+    </footer>
+
+    <script src="MyScript.js"></script>
+</body>
+</html>

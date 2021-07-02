@@ -1,0 +1,424 @@
+﻿@media screen{
+    nav ul.static {
+        list-style: none;
+        padding-left: 0px; 
+        text-align: center;
+        background-color: antiquewhite;
+        position: static;
+        display: flex;
+    }
+
+    nav li {
+        flex: 25%;
+        text-align: center;
+        font-size: 18px;
+        font-weight: 700;
+        border-right: 5px solid #aaaaaa;
+     
+    }
+    nav li a {
+        display: block;
+        padding: 14px 16px;
+        font-size: 18px;
+    }
+    nav li:last-child {
+        border-right: none;
+    }
+   
+    nav a:link, a:visited {
+        color: #4d1d18; 
+        text-decoration: none; 
+        text-transform: uppercase; 
+    }
+    nav a:hover {
+       
+        color: #555;
+    }
+    nav li a.active {
+        background-color:brown;
+        color:antiquewhite;
+    }
+    nav li a:hover:not(.active) {
+        background-color:lightgray;
+   
+    }
+
+    .logo {
+        margin-left: auto;
+        margin-right: auto;
+        width: 75%;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+    .bookmark {
+        list-style: circle;
+        padding-left: 30px;
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 150%;
+    }
+    .bookmark a:link, a:visited {
+        color: #87423c; 
+        text-decoration: none; 
+            
+    }
+    .bookmark a:hover {color: #555;}
+
+    h1 {
+        color: #87423c;
+        font-size: 36px;
+    }
+    h2, h3, h4, h5, h6 {
+        color: #4d1d18;
+        font-size: 24px;
+    }
+    body {
+        margin: 10px;
+        background-color:antiquewhite;
+        font-family: Helvetica, Calibri, sans-serif;
+    }
+
+    .left-col {
+        background-color:navajowhite;
+        float: left;
+        width: 60%;
+        padding: 1%;
+    }
+
+    .right-col {
+        background-color: darksalmon;
+        color: papayawhip;
+        float: right;
+        width: 33%;
+        padding: 20px 2.5%;
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 100%;
+    }
+
+    #pagename {
+        border-left-style: solid;
+        border-left-color:maroon;
+        border-left-width: 30px;
+        padding-left: 10px;
+        border-bottom-style: double;
+        border-bottom-color: maroon;
+        margin-right: 400px;
+    }
+    footer {
+        text-align: center;
+        background-color: ivory;
+        color: #87423c;
+        clear: left;
+        border: dashed;
+        font-size: 18px;
+        font-weight: 700;
+    }
+
+  /*  div.gallery {
+        margin: 10px;
+        border: 1px solid #ddd;
+        float: left;
+        width: 400px;
+        border-radius: 4px;
+        padding: 5px;
+      
+    }
+
+    div.gallery:hover {
+        border: 1px solid #777;
+        box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+    }
+
+   div.gallery img {
+     width: 100%;
+     height: auto;
+   }
+  
+    div.desc {
+       padding: 15px;
+       text-align: center;
+    }*/
+
+    p {line-height:150%;}
+
+    #top {
+        position: fixed;
+        background-color: lightgrey;
+        opacity: 0.8;
+        bottom: 20px;
+        right: 100px;
+        line-height: 150%;
+        font-size: 18px;
+        font-weight: 500;
+    }
+    #top a:link, a:visited {
+        color: #87423c;
+        text-decoration: none; 
+    }
+    #top a:hover {color: #555;}
+
+    .contactdetails {
+        list-style: none;
+        border: hidden;
+        display: block;
+        width: 400px;
+        height: 100px;
+        padding: 5px;
+        padding-bottom:10px;
+    }
+    .contactdetails li {
+        text-align: left;
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 150%;
+        padding-left: 0px;
+    }
+    .thingli li {
+        text-align: left;
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 200%;
+        padding-left: 0px;
+    }
+    .thingli{
+        list-style:circle;
+        /*margin-bottom:10px;*/
+    }
+    .thingli ul{
+        list-style:square;
+    }
+    .pricing {
+        margin-bottom:200px;
+        margin-left:10px;
+    }
+    #Price {
+        border:groove;
+        border-color: #87423c;
+        color: #4d1d18;
+        font-size: 18px;
+        padding:10px;
+    }
+    #map {
+        border-radius: 4px;
+        display: block;
+        width: 650px;
+        border: hidden;
+        margin-bottom: 70px;
+    }
+    .image img{
+        border-radius: 4px;
+        padding: 5px;
+        display: block;
+        border: 1px solid #777;
+        box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+        width: 550px;
+        height: 400px; 
+    }
+    .image img:last-child{margin-bottom:40px;}
+
+    /*#border{
+        border:hidden;
+        display:block;*/
+        /*padding-bottom:200px;*/
+    /*}*/
+
+ 
+    .mySlides img {
+        vertical-align: middle;
+        width:100%;
+    }
+
+    /* Position the image container (needed to position the left and right arrows) */
+    .container {
+        position: relative;
+    }
+
+    /* Hide the images by default */
+    .mySlides {
+        display: none;
+    }
+
+    /* Add a pointer when hovering over the thumbnail images */
+    .cursor {
+        cursor: pointer;
+    }
+
+    /* Next & previous buttons */
+    .prev,
+    .next {
+        cursor: pointer;
+        position: absolute;
+        top: 40%;
+        width: auto;
+        padding: 16px;
+        margin-top: -50px;
+        color: white;
+        font-weight: bold;
+        font-size: 20px;
+        border-radius: 0 3px 3px 0;
+        user-select: none;
+        -webkit-user-select: none;
+    }
+
+    /* Position the "next button" to the right */
+    .next {
+        right: 0;
+        border-radius: 3px 0 0 3px;
+    }
+
+    /* On hover, add a black background color with a little bit see-through */
+    .prev:hover,
+    .next:hover {
+        background-color: rgba(0, 0, 0, 0.8);
+    }
+
+    /* Number text (1/3 etc) */
+    .numbertext {
+        color: #f2f2f2;
+        font-size: 12px;
+        padding: 8px 12px;
+        position: absolute;
+        top: 0;
+    }
+
+    /* Container for image text */
+    .caption-container {
+        text-align: center;
+        background-color: #222;
+        padding: 2px 16px;
+        color: white;
+    }
+
+    .row:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+
+    /* Six columns side by side */
+    .column {
+        float: left;
+        width: 16.66%;
+    }
+
+    /* Add a transparency effect for thumnbail images */
+    .demo {
+        opacity: 0.6;
+    }
+
+    .active,
+    .demo:hover {
+        opacity: 1;
+    }
+
+
+
+    .formContainer {
+        padding: 16px;
+        height: 900px;
+    }
+
+    form label {
+        margin: 55px 0px 22px 0px;
+    }
+    /* Full-width input fields */
+    input[type=text], input[type=email] {
+        width: 100%;
+        padding: 15px;
+        margin: 5px 0 2px 0;
+        display: inline-block;
+        border: none;
+        /*background: #f1f1f1;*/
+    }
+
+    /*   input[type=text]:focus, input[type=email]:focus {
+            background-color: #ddd;
+            outline: none;
+        }*/
+
+    /* Overwrite default styles of hr */
+    hr {
+        border: 1px solid #f1f1f1;
+        margin-bottom: 25px;
+    }
+
+    /* Set a style for the submit/register button */
+    .submit, .reset {
+        background-color: #87423c;
+        color: antiquewhite;
+        padding: 16px 20px;
+        margin: 8px 0;
+        border: none;
+        cursor: pointer;
+        width: 100%;
+        opacity: 0.9;
+        font-size: 24px;
+        font-weight: 500;
+    }
+
+    .submit:hover, .reset:hover {
+        opacity: 1;
+    }
+
+    input.valid {
+        background: #dddddd;
+    }
+
+    input.invalid {
+        background: #faa;
+    }
+
+    #invalidName, #invalidEmail, #invalidPhoneNumber, #emptyQuery {
+        line-height: 100%;
+        padding-bottom: 5px;
+        margin-top: 0px;
+        margin-bottom: 20px;
+        font-size: 15px;
+        font-weight: 100;
+        color: #87423c;
+        font-style: italic;
+    }
+
+  
+}
+
+@media screen and (max-width:480px) /* mobile device*/
+{
+    nav li {
+        width: 100%;
+        border-bottom: 1px solid black;
+    }
+
+    div.responsive {
+        width: 100%;
+    }
+}
+
+@media print {
+    nav {
+        visibility: hidden; /* reserve the nav position */
+        display: none; /* does not reserve the nav position */
+    }
+    .left-col {
+        float: left;
+        width: 60%;
+    }
+    .right-col {
+        float: right;
+        width: 35%;
+        padding: 20px 2.5%;
+    }
+    footer{
+        clear:both;
+    }
+    #top{
+        display:none;
+    }
+    #map{
+        width:700px;
+    }
+    .bookmark{
+        display:none;
+    }
+}
+

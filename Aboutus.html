@@ -1,0 +1,219 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>Sorrento by the Sea – Luxury Apartments</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link href="Main.css" rel="stylesheet" />
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="HomePage.html" title="go to Home Page">
+                    <img src="Images/sorrento_by_the_sea_logo.jpg" alt="Sorreto Company Logo" />
+                </a>
+            </div>
+
+            <ul class="static">
+
+                <li><a href="HomePage.html">Home page</a></li>
+                <li><a href="ContactPage.html">Cotact Us and Location</a></li>
+                <li><a href="Thingtodo.html">Things to do</a></li>
+                <li><a class="active" href="Aboutus.html">About Us - Pricing</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="left-col">
+            <h1 id="pagename">About Us - Pricing</h1>
+            <div id="border">
+                <p>
+                    <br />  On the Mornington Peninsula (one hour from Melbourne) next door to Portsea.<br />
+                    Our apartment is a lazy 10-minute walk from the relaxed township of Sorrento that offers restaurants, cafes, a chemist, a supermarket, a butcher and lots more. It is located in a quiet avenue, just 4 houses from the beach. It is in easy walking distance of the ocean beaches and surf.
+                    Your private luxury apartment consists of a spacious living area with leather lounge suite overlooking a sun drenched, tree-filled private garden.
+                    A separate kitchenette has everything you need to make your stay relaxed and comfortable. A queen sized bedroom and an amazing bathroom complete with free standing black bath entices you to relax and unwind.
+                    Two TVs are sure to make everyone happy!  An undercover BBQ area with seating offers plenty of space to stretch out and enjoy that cup of freshly brewed coffee or a glass of wine.
+                    This is the perfect place for a home away from home. It is located in a quiet avenue, just 4 houses from the beach. It is in easy walking distance of the ocean beaches and surf.
+                </p>
+
+                <h1>Unique Attractions of the Area:</h1>
+                <ul class="thingli">
+                    <li>The calm front beach on Port Phillip Bay.</li>
+                    <li>The wilder surfing beaches on the Bass Strait side.</li>
+                    <li>Coastal Walks.</li>
+                    <li>Swimming with Dolphins and fishing.</li>
+                    <li>One hour driving from Melbourne.</li>
+                    <li>
+                        More Features:
+                        <ul>
+                            <li>Special price for people who want to get away from the city for a few days!!</li>
+                            <li>Pet-friendly.</li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <div class="pricing">
+                    <h1>Our Price</h1>
+                    <hr />
+                    <table>
+                        <tr>
+                            <td><h2>January-February-March</h2></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <select id="monthsDropDown0"></select>
+                                <button onclick="displayDate(monthsDropDown0, selectedDateDropDown)">Add Date </button>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td><h2>April-May-June</h2></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <select id="monthsDropDown3"></select>
+                                <button onclick="displayDate(monthsDropDown3, selectedDateDropDown)">Add Date</button>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td><h2>July-August-September</h2></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <select id="monthsDropDown6"></select>
+                                <button onclick="displayDate(monthsDropDown6, selectedDateDropDown)">Add Date</button>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td><h2>October-November-December</h2></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <select id="monthsDropDown9"></select>
+                                <button onclick="displayDate(monthsDropDown9, selectedDateDropDown)">Add Date</button>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td><h2>The Selected Booking Date</h2></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <select id="selectedDateDropDown"></select>
+                                <button onclick="removeFromArray()">Remove Date</button>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td><h2>Total Price:</h2></td>
+                        </tr>
+
+                        <tr>
+                            <td><span id="Price">0</span></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+
+        </section>
+
+        <aside class="right-col">
+            <h3>Gallery</h3>
+            <div class="container">
+
+                <div class="mySlides">
+                    <div class="numbertext">1 / 7</div>
+                    <img src="Images/apartment_front.jpg" width="400" height="300" />
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">2 / 7</div>
+                    <img src="Images/ocean_beach.jpg" />
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">3 / 7</div>
+                    <img src="Images/ocean_beach_2.jpg" />
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">4 / 7</div>
+                    <img src="Images/ocean_beach3.jpg" />
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">5 / 7</div>
+                    <img src="Images/apartment_garden.jpg" />
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">6 / 7</div>
+                    <img src="Images/back_beach_sorrento.jpg" />
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">7 / 7</div>
+                    <img src="Images/sorrento_from_jetty.jpg" />
+                </div>
+
+                <a class="prev" onclick="plusSlides(-1)">❮</a>
+                <a class="next" onclick="plusSlides(1)">❯</a>
+
+                <div class="caption-container">
+                    <p id="caption"></p>
+                </div>
+
+                <div class="row">
+                    <div class="column">
+                        <img class="demo cursor" src="Images/apartment_front.jpg" style="width:100%" onclick="currentSlide(1)" alt="The front of the appartment">
+                    </div>
+                    <div class="column">
+                        <img class="demo cursor" src="Images/ocean_beach.jpg" style="width:100%" onclick="currentSlide(2)" alt="Ocean Beach-1">
+                    </div>
+                    <div class="column">
+                        <img class="demo cursor" src="Images/ocean_beach_2.jpg" style="width:100%" onclick="currentSlide(3)" alt="Ocean Beach-2">
+                    </div>
+                    <div class="column">
+                        <img class="demo cursor" src="Images/ocean_beach3.jpg" style="width:100%" onclick="currentSlide(4)" alt="Ocean Beach-3">
+                    </div>
+                    <div class="column">
+                        <img class="demo cursor" src="Images/apartment_garden.jpg" style="width:100%" onclick="currentSlide(5)" alt="Apartment Garden">
+                    </div>
+                    <div class="column">
+                        <img class="demo cursor" src="Images/back_beach_sorrento.jpg" style="width:100%" onclick="currentSlide(6)" alt="Back Beach-2">
+                    </div>
+                    <div class="column">
+                        <img class="demo cursor" src="Images/sorrento_from_jetty.jpg" style="width:100%" onclick="currentSlide(7)" alt="Sorrnto from jetty">
+                    </div>
+                </div>
+            </div>
+
+        </aside>
+        <div id="top"><a href="#pagename">Go to Top</a></div>
+    </main>
+    <footer>
+        <p>Follow and Contact us:</p>
+        <a target="_blank" href="https://www.youtube.com/" title="go to Youtube">
+            <img src="Images/youtube-variation_small.png" alt="youtube icon" />
+        </a>
+
+        <a target="_blank" href="https://twitter.com/" title="go to Twitter">
+            <img src="Images/twitter_small.png" alt="twitter icon" />
+        </a>
+
+        <a target="_blank" href="https://www.instagram.com/" title="go to Instagram">
+            <img src="Images/instagram_small.png" alt=" instagram icon" />
+        </a>
+
+        <a target="_blank" href="https://www.facebook.com/" title="go to Facebook">
+            <img src="Images/facebook_small.png" alt=" facebook icon" />
+        </a>
+    </footer>
+    <script src="MyScript.js"></script>
+</body>
+</html>
